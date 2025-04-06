@@ -1,0 +1,35 @@
+.carousel-item{
+    height: 500px;
+    background: black;
+    color: white;
+    position: relative;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.head{
+    background-color: #9F2B2C;
+    width:100vw;
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav{
+    text-decoration: none;
+    justify-content: space-between;
+}
+.Sobre{
+    background-color: #101010;
+    height: 400px;
+    width: 100vw;
+    color: white;
+    text-align: left;
+    align-items: center;
+}
