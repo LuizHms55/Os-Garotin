@@ -30,6 +30,39 @@
     height: 400px;
     width: 100vw;
     color: white;
+}
+.Listagem{
     text-align: left;
     align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.membros{
+    display: flex;
+    width: 90vw;
+}
+
+.painel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 30px;
+    color: #ffff;
+    cursor: pointer;
+    flex: 0,5;
+    margin: 10px;
+    position: relative;
+    -webkit-transform: all 700ms ease-in;
 }
