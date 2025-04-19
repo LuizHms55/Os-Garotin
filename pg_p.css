@@ -22,8 +22,12 @@
     align-items: center;
 }
 .nav{
+    display: flex;
     text-decoration: none;
-    justify-content: space-between;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
 }
 .Sobre{
     background-color: #101010;
@@ -31,38 +35,113 @@
     width: 100vw;
     color: white;
 }
-.Listagem{
-    text-align: left;
-    align-items: center;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-body{
+.Quem{
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    align-items: center;
+    background-color: #101010;
+    height: 200px;
+    width: 80vw;
+    padding-left: 100px;
 }
+
+
+
+.listagem h1{
+    font-size: 50px;
+    font-weight: 30px;
+}
+
+
 .membros{
     display: flex;
     width: 90vw;
 }
 
-.painel{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 30px;
-    color: #ffff;
-    cursor: pointer;
-    flex: 0,5;
-    margin: 10px;
+.slider{
+    margin: 0 auto;
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+}
+.slide{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
     position: relative;
-    -webkit-transform: all 700ms ease-in;
+    transition: 2s
+}
+
+.slide img{
+    width: 100vw;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100vw;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .Primeiro{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .Primeiro{
+    margin-left: -400%;
+}
+
+.navigation div{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation{
+    position: absolute;
+    width: 100vw;
+    margin-top: 463px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child){
+    margin-right: 40.8px;
+    margin-top: 1.8px;
+}
+
+#radio1:checked ~ .navigation .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation .auto-btn2{
+    background-color: white;
 }
