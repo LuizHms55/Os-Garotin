@@ -23,11 +23,12 @@
 }
 .nav{
     display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    flex-direction: row;
     justify-content: space-around;
+}
+.nav a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
     padding: 10px;
 }
 .Sobre{
@@ -160,7 +161,39 @@ thead tr{
     display: flex;
     flex-direction: column;
 }
-
+.chamada{
+    width: 100vw;
+    height: 500px;
+}
+.chamada img{
+    width: 100vw;
+    height: 400px;
+    object-fit:cover;
+}
+.albunss{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(to bottom,#222222 5%,#2E1B1C 30%,#421112 65%,#6F0407 100%);
+}
+.venda1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    color: white;
+}
+.venda1 button{
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: none;
+}
+.venda1 img{
+    width: 300px;
+    border-radius: 20px;
+}
 /*carrosel*/
 .slider{
     margin: 0 auto;
